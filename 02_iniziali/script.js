@@ -9,12 +9,13 @@ function initials(namesArray){
 
     let letterArray = [];
     
-   
     for(let i = 0; i <= namesArray.length -1; i++){
-        
-        let firstLetter = namesArray.indexOf(i);
 
-        letterArray[i] += firstLetter;      
+        const currentName = namesArray[i];
+
+        let firstLetter = currentName.at(0);
+
+        letterArray.push(firstLetter);      
     }
 
     return letterArray;
