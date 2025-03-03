@@ -5,19 +5,38 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-function findVowels(input){
+function vowelsCounter(input){
 
     let vowels=0;
+
     for (let i=0; i<=input.length-1; i++){
-        if (i==='a'|| i==='e' || i==='i'|| i==='o' ||i==='u'){
+        userInput=input.charAt(i);
+        if (userInput==='a'|| userInput==='e' || userInput==='i'|| userInput==='o' ||userInput==='u'){
             vowels++;
         }
     }
     return vowels;
+
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(findVowels(word));
+console.log(vowelsCounter(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
+
+//arrow function
+
+// const vowelsCounter = (input) => {
+//     let vowels=0;
+
+//     for (let i=0; i<=input.length-1; i++){
+//         userInput=input.charAt(i);
+//         if (userInput==='a'|| userInput==='e' || userInput==='i'|| userInput==='o' ||userInput==='u'){
+//             vowels++;
+//         }
+//     }
+//     return vowels;
+// }
+
+// console.log(vowelsCounter(word));
