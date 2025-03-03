@@ -11,7 +11,9 @@ function initials(namesArray){
     
    
     for(let i = 0; i <= namesArray.length -1; i++){
+        
         let firstLetter = namesArray.indexOf(i);
+
         letterArray[i] += firstLetter;      
     }
 
