@@ -47,3 +47,14 @@ console.log(filteredInitials(names,letter));
 // }
 
 // console.log(filteredInitials(names,letter));
+
+// versione arrow function con .filter 
+
+// const filteredInitials = (namesArray,chosenLetter) => namesArray.filter((element)=>{
+//     const firsLetter = element[0];
+//     if(firsLetter===chosenLetter){
+//         return true;
+//     }
+// });
+
+// console.log(filteredInitials(names,letter));
