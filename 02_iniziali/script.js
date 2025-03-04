@@ -46,3 +46,15 @@ console.log(initials(names));
 // }
 
 // console.log(initials(names));
+
+// altro metodo ==> funzione .map (built-in in js)
+
+// function initials(namesArray){
+//     const result = namesArray.map((element) => element[0]);
+//     return result;
+// }
+
+//e la sua arrow function
+// const initials = (namesArray)=>namesArray.map((element)=>element[0]);
+
+// console.log(initials(names));
